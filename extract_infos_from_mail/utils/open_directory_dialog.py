@@ -9,6 +9,10 @@ def open_directory_dialog():
     def quit_application():
         root.destroy()
 
+    def on_closing():
+        if messagebox.askokcancel("Quit", "Do you want to quit?"):
+            root.destroy()
+
     def update_selection_labels(directory, excel_file):
         directory_label.config(text=f"Selected directory: {directory}")
         excel_label.config(text=f"Selected Excel file: {excel_file}")
@@ -46,6 +50,7 @@ def open_directory_dialog():
 
     root = Tk()
     root.title("Extract Email Addresses from .msg Files")
+    root.protocol("WM_DELETE_WINDOW", on_closing)
 
     label = Label(
         root, text="Click the button to select a directory and an Excel file."
