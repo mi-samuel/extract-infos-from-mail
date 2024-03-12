@@ -18,12 +18,14 @@ def open_directory_dialog():
         excel_label.config(text=f"Selected Excel file: {excel_file}")
 
     def process_selection():
-        while True:
+        process = True
+        while process:
             directory = select_directory()
             if not directory:
                 messagebox.showerror(
                     "Error", "No directory selected. Please try again."
                 )
+                process = False
                 continue
 
             excel_file_path = select_excel_file()
@@ -31,6 +33,7 @@ def open_directory_dialog():
                 messagebox.showerror(
                     "Error", "No Excel file selected. Please try again."
                 )
+                process = False
                 continue
 
             excel_data = read_msg_files(directory)
