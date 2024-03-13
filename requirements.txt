@@ -1,32 +1,10 @@
 altgraph==0.17.4
-beautifulsoup4==4.12.3
-cffi==1.16.0
-colorclass==2.2.2
-compressed_rtf==1.0.6
-cryptography==42.0.5
-easygui==0.98.3
-ebcdic==1.1.1
 et-xmlfile==1.1.0
--e git+ssh://git@github.com/mi-samuel/extract-infos-from-mail.git@d075516639a0d8164b9eb70267c815319f0a64a7#egg=extract_infos_from_mail
-extract-msg==0.48.2
-lark==1.1.8
-msoffcrypto-tool==5.3.1
-olefile==0.47
-oletools==0.60.1
+-e git+ssh://git@github.com/mi-samuel/extract-infos-from-mail.git@f3edcda959d20a3df4eeb91e71ea804d7db19b84#egg=extract_infos_from_mail
 openpyxl==3.1.2
 packaging==24.0
-pcodedmp==1.2.6
 pefile==2023.2.7
-pycparser==2.21
 pyinstaller==6.5.0
 pyinstaller-hooks-contrib==2024.3
-pyparsing==2.4.7
-pywin32==306
 pywin32-ctypes==0.2.2
-red-black-tree-mod==1.20
-RTFDE==0.1.1
 setuptools==69.1.1
-soupsieve==2.5
-tzdata==2024.1
-tzlocal==5.2
-win_unicode_console==0.5
