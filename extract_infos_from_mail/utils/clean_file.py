@@ -21,10 +21,20 @@ def clean_file(file_path) -> str:
     content = "\n".join(
         [line for line in content.split("\n") if not line.startswith("Objet:")]
     )
+    content = "\n".join(
+        [line for line in content.split("\n") if not line.startswith("Le garage")]
+    )
+    content = "\n".join(
+        [line for line in content.split("\n") if not line.startswith("Le camping-car")]
+    )
+    # 662578
 
     content = content.replace("Code pro partenaire :", "BEGIN\nCode pro partenaire :")
 
-    clean_file_path = file_path.replace(".txt", "_clean.txt")
+    # Remove tabulations
+    content = content.replace("\t", " ")
+
+    clean_file_path = file_path.replace(".txt", "_clean2.txt")
 
     with open(clean_file_path, "w") as file:
         file.write(content)
