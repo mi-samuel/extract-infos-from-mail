@@ -16,7 +16,7 @@ This project is a simple application that extracts information from emails and s
     - [Update a package](#update-a-package)
     - [Install all packages](#install-all-packages)
     - [Update the requirements.txt file after adding or removing a package](#update-the-requirementstxt-file-after-adding-or-removing-a-package)
-- ***
+- [Launch the application](#launch-the-application)
 
 # Installation
 
